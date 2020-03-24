@@ -1,0 +1,52 @@
+.back{
+    background-color: antiquewhite;   
+}
+
+p{
+    font-size: larger;
+    padding-left: 2rem;
+    padding-right: 10rem;
+    font : justify;
+}
+
+.h1{
+    padding-bottom: 2rem;
+}
+
+.h2{
+    padding-bottom: 2rem;
+}
+
+.h4{
+    padding-bottom: 2rem;
+}
+
+ul{
+    font-size: x-large;
+}
+
+ol{
+    font-size: x-large;
+}
+
+.title{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+

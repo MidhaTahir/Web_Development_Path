@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta:400,700|Noto+Sans+KR&display=swap');
+
+h2.title{
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+.navbar-brand .title{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+div.initial{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 4px;
+}
+
+.initial span{
+    font-style: italic;
+}
+
+.initial .second{
+    text-decoration: underline;
+}
+
+.initial .special{
+    font-style: none;
+    color : red;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+    
+.un{
+    list-style-image: url(../image/star.png);
+}
+
+.firstimg{
+    padding-left: 15px;
+}

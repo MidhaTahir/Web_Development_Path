@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.thank{
+    color: green;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.purple{
+    color:purple;
+    font-weight: 500;
+    font-size:40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.back{
+    color: green;
+    font-weight: 400;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>A deeper dive in SELECTORS</title>
+</head>
+<body>
+    <h1>"This is Midha"</h1>
+    <hr>
+
+    <h2>DESCENDANT AND CHILD SELECTOR</h2>
+    <main>
+        <p>Lorem Ipsum hey <a href="https://www.google.com">Go Google </a> a tag is Not a first child</p><br>
+        <p>Lorem Ipsum hey <a href="https://www.facebook.com">Go facebook </a>a tag is Not a first child</p><br>
+        <p>Lorem Ipsum hey <a href="https://www.twitter.com">Go twitter </a>a tag is Not a first child</p>
+        <a href="https://www.twitter.com">First Child</a>
+    </main>
+    <hr>
+    <!-- -------------------- -->
+    <h2>SIBLINGS SELECTOR 1)ADJACENT 2)GENERAL</h2>
+    <section>
+        <!-- h3 and h2 are sibling -->
+        <h3>I am h3 child of section and h2 is my sibling</h3>
+        <h2>I am h2 I am also a child of section and I comes after my h3 sibling</h2>
+    </section>
+
+    <div>
+        <!-- Here h2, and all p tags are siblings -->
+        <h2>I am h2</h2>
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+    </div>
+    <hr>
+    <!-- -------------------- -->
+
+    <!-- Class and id selectors -->
+    <div class='me_class' id="me_id">
+        <p>lorem ipsum</p>
+        <p> hey I am inside div</p>
+    </div>
+    <hr>
+
+    <!-- -------------------- -->
+    
+    <!-- Attribute Selectors -->
+    <div data-modal="open" class="closed">
+        <p>Attribute </p>
+    </div>
+    <hr>
+    <!-- -------------------- -->
+
+    <!-- Positional Selectors -->
+    <ul>
+        <li>nope</li>
+        <!-- WILL match -->
+        <li>yep, I'm #2</li>
+        <li>nope</li>
+    </ul>
+    <hr>
+    <!-- -------------------- -->
+
+    <!-- Pseudo Selectors (empty here)-->
+    <!-- WILL match -->
+    <div></div>
+
+    <!-- WILL match -->
+    <aside data-blah><!-- nothin' --></aside>
+
+    <!-- Will NOT match -->
+    <div> </div>
+
+    <!-- Will NOT match -->
+    <div>
+    </div>
+    
+</body>
+</html>

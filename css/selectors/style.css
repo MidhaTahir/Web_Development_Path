@@ -1,0 +1,76 @@
+/* * selects all */
+*{
+    background-color: lightgray;
+}
+
+h1 {
+    background-color: lime;
+
+}
+
+h1{
+    background-color: palegreen;
+    /* priority will be given to this as it comes after above h1 */
+}
+/* ********** */
+
+/* Descendant (anywhere inside this tag) syntax: main h1 (space inbetween)*/ 
+main a{
+    text-decoration: overline;
+}
+
+/* Child Selector (must be first child) syntax main > h1 (greater than sign inbetween */
+main > a{
+    background-color: purple;
+    /* nothing happens in starting 3 a tags as there are not first child of main
+    but 4th a background will be change as it is first child of main */
+}
+/* ********** */
+
+/* Siblings SELECTORS */
+/* adjacent sibling +
+    general sibling ~  */
+
+h3 + h2{
+    background-color: royalblue;
+    /* selects h2 whose sibling is h3 and it is coming after h3 */
+}
+
+h2 + p{
+    background-color: rgb(177, 153, 153);
+    /* selects only p tag which is coming after h2 tag */
+}
+
+h2 ~ p{
+    background-color: saddlebrown;
+    /* selects all p tag that are h2 siblings */
+}
+/* ********** */
+
+/* CLASS AND ID SELECTORS */
+#me_id{
+    font-size: small;
+    /* ID selectors are the most powerful type of selector in terms of CSS specificity. Meaning that they beat out other types of selectors and the styles defined within win. That sounds good, but that’s typically considered bad, because it’s nice to have lower-specificity selectors that are easier to override when needed. */
+}
+
+.me_class{
+    font-size: xx-large;
+}
+/* ********** */
+
+/* Attribute Selector */
+[data-modal="open"] {
+    font-style: oblique;
+}
+/* ********** */
+
+/* Positional Selectors  */
+li:nth-child(2) {
+    text-decoration: underline;
+}
+
+/* ********** */
+/* Pseudo Selectors */
+:empty{
+    
+}

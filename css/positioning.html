@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        html{
+            background-color: lightblue;
+        }
+
+        h1{
+            text-align: center;
+            text-shadow: 2px 2px 5px darkcyan;
+            color: white;
+            font-size: 40px;
+        }
+
+
+        img{
+            /* relative will leave left top space from above element(reference one element) */
+            /* position:relative;  */
+            /* absolute will reference whole screen */
+            position :absolute; 
+            /* leave 200px from left */
+            left : 200px; 
+            top : 150px;
+        }
+
+        .black{
+            width:250px;
+            height: 250px;
+            display : inline-block;
+            background-color: black;
+        }
+        .blackfirst{
+            width:250px;
+            height: 250px;
+            display : inline-block;
+            background-color: black;
+            margin-left: 135px;
+        }
+
+
+        .white{
+            width:250px;
+            height: 250px;
+            display : inline-block;
+            background-color: white;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Game</h1>
+    <div class='blackfirst'></div>
+    <div class='white'></div>
+    <div class='black'></div>
+    <div class='white'></div>
+    <img src="https://images.vexels.com/media/users/3/166405/isolated/preview/e47539fabaec6a696ef979f2348bfd97-knight-chess-piece-by-vexels.png" alt="horse" width="150px">
+</body>
+</html>

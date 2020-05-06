@@ -1,0 +1,32 @@
+header div {
+	background-color: rgb(49, 109, 195);
+}
+
+header div.col ul li {
+	display: inline;
+	list-style-type: none;
+	padding: 4px 4px;
+}
+
+header div.col ul li .icon {
+	margin-left: 10px;
+	margin-right: 10px;
+	border: none;
+}
+
+header div.col:first-of-type ul li:hover {
+	background-color: rgb(120, 166, 230);
+}
+
+header div.col ul li button {
+	color: #427900;
+	border: 1px solid black;
+	font-size: 12px;
+	padding: 5px 6px;
+}
+
+header div.col p::selection {
+	display: inline;
+	background-color: black;
+	color: white;
+}

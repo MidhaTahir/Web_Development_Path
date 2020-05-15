@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            margin:0;padding:0;
+        }
+        .container{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform :translate(-50%,-50%);
+        }
+        .container > a{
+            font-size: 24px;
+            padding: 8px 24px;
+            background-color: lightblue;
+            color: #fff;
+            font-family: 'helvetica';
+            text-transform: uppercase;
+            text-decoration: none;
+            /* first property , time , delay ,timing funct , second prop */
+            transition: background-color 3s 500ms  ease-in-out, color 2s 200ms ease-out ; 
+            /* visit cubic bezier web for more fun */
+            
+            }
+            .container > a:hover{
+                background-color: aqua;
+                color: black;
+            }
+
+            .ball{
+                width:50px;
+                height:50px;
+                background-color: burlywood;
+                border-radius: 100%;
+                transition : transform .75s 200ms ease-in;
+                
+            }
+            .ball:hover{
+                transform : translateX(200px);
+            }
+
+            .ball2{
+                width:50px;
+                height:50px;
+                background-color: burlywood;
+                border-radius: 100%;
+                transition : transform .75s 200ms linear;
+                
+            }
+            .ball2:hover{
+                transform : scale(2);
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#">rartist</a>
+        <br>
+        <br>
+        <div class="ball"></div>
+        <br><br>
+        <div class="ball2"></div>
+    </div>
+</body>
+</html>

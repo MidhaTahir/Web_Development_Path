@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        .box{
+            width: 350px;
+            height : 350px;
+            margin : 50px auto;
+        }
+        .default{
+            background: -webkit-linear-gradient(crimson,black);
+        }
+
+        .horizontal{
+            background: -webkit-linear-gradient(bottom,crimson,black);
+            /* bottom will reverse */
+            /*  we can give left right bottow , top is default*/
+        }
+
+        .multiple{
+            background: -webkit-linear-gradient(bottom,crimson,black,white);
+        }
+
+        .position{
+            background: -webkit-linear-gradient(left,red 200px,yellow 40%,green 90%);
+            /* give locations as % or px */
+        }
+    </style>
+</head>
+<body>
+    <div class="box default"></div>
+    <div class="box horizontal"></div>
+    <div class="box multiple"></div>
+    <div class="box position"></div>
+</body>
+</html>

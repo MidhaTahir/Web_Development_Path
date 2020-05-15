@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradients</title>
+    <style>
+        body{
+            background: -webkit-linear-gradient(top,gray,black,white);
+            /* for some browser it a problem so add below two lines */
+            background-repeat : no-repeat;
+            background-attachment: fixed;
+        }
+        .box{
+            width: 350px;
+            height : 350px;
+            margin : 50px auto;
+        }
+        .default{
+            background: -webkit-radial-gradient(left,crimson,black);
+        }
+        .circle{
+            /* background: -webkit-radial-gradient(circle,crimson,black); */
+            /* circle or contain circle */
+            /* background: -webkit-radial-gradient(circle closest-side,crimson,black); */
+            /* background: -webkit-radial-gradient(circle farthest-side,crimson,black); */
+            background: -webkit-radial-gradient(contain circle ,crimson,black);
+        }
+
+        .ball{
+            width: 250px;
+            height:250px;
+            margin :25px auto;
+            border-radius: 100%;
+        }
+
+        .colors{
+            background: -webkit-radial-gradient(red,orange);
+        }
+        .multiple{
+            background: -webkit-radial-gradient(left,red,blue,yellow,orange,purple);
+        }
+    </style>
+</head>
+<body>
+    <div class="box default"></div>
+    <div class="box circle"></div>
+    <div class="ball colors"></div>
+    <div class="ball multiple"></div>
+</body>
+</html>

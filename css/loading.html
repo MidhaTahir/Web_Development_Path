@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes loading{
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(368deg); }
+        }
+        .container{
+            position : absolute;
+            left:50%;
+            top:50%;
+            transform : translate(-50%,-50%);
+        }
+        .cycle{
+            width : 50px;
+            height: 50px;
+            border : 10px solid crimson;
+            border-radius: 100%;
+            border-top-color : transparent;
+            /* name_of_animation ,duration,animation_timingfunc , delay*/
+            animation: loading 1s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cycle"></div>
+    </div>
+</body>
+</html>

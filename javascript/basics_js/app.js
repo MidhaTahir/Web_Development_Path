@@ -43,8 +43,8 @@ console.log(m.split(','));
 
 
 // Arrays - variables that hold multiple values
- const numbers = new Array(1,2,3); //after new is constructor
- console.log(numbers);
+const numbers = new Array(1,2,3); //after new is constructor
+console.log(numbers);
 const fruits = ['apples','oranges','pears',10,true,23.3];
 fruits[4] = 'grapes';
 console.log(fruits);

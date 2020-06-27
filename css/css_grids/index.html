@@ -2,17 +2,27 @@
     <head>
         <link rel="stylesheet" href="basic.css">
     <style>
-        .container{
+        .first{
             display: grid;
             grid-template-columns: auto 40px 40px ;
             grid-template-rows: 128px 128px;
             grid-gap : 20px
         }
-        
+        .second{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-rows: 128px 128px; */
+
+            /* grid-template-columns: repeat(6,1fr); */
+            /* grid-template-columns: repeat(3,1fr); amount of column/row, no of fractions */
+            /* repeat (row) / (column) in below line*/
+            grid-template: repeat(2, 150px) / repeat(3, 1fr); 
+            grid-gap : 20px
+        }
     </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container first">
             <div>1</div>
             <div>2</div>
             <div>3</div>
@@ -20,5 +30,19 @@
             <div>5</div>
             <div>6</div>          
         </div>
+
+        <hr>
+
+        <div class="container second">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>          
+        </div>
+
+        <hr>
+
     </body>
 </html>

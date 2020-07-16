@@ -1,0 +1,13 @@
+//variable declaration in sass
+
+$primary-color :grey; 
+$font : 50px;
+
+
+body {
+    background-color:$primary-color;
+}
+
+p{
+    font-size: $font;
+}

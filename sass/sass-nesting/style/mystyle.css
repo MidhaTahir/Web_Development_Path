@@ -1,0 +1,28 @@
+#main-nav {
+  background: #001122;
+}
+
+#main-nav ul {
+  width: 100%;
+}
+
+#main-nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#main-nav li {
+  list-style-type: none;
+  float: left;
+  width: 14%;
+}
+
+#main-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+  text-align: center;
+}
+/*# sourceMappingURL=mystyle.css.map */

@@ -1,0 +1,33 @@
+
+$deepBlue : #001122;
+$offWhite : #fff;
+
+#main-nav{
+    background: $deepBlue;
+    ul{ // same as #main-nav ul in css
+        width : 100%;
+        &:after{ // adding pseudo elements
+            content: "";
+            display: block;
+            clear: both;
+            }
+    }
+
+    li{ // same as #main-nav li{}
+        list-style-type: none;
+        float : left;
+        width: 14%;
+    }
+
+    a{
+        color: $offWhite;
+        text-decoration: none;
+        padding: 16px;
+        display: block;
+        text-align: center;
+        &:hover{
+            background-color: darkcyan;
+        }
+    }
+    
+}

@@ -1,0 +1,19 @@
+<%- include ('partials/header.ejs') %>
+
+<h1>This is JS inside this <%= 5 + 5 %></h1>
+<h1>Variable from templateEJS.js file is passed here like this <%= thingVar %></h1>
+
+
+<%# If conditionals in ejs %> 
+<% if(thingVar.toLowerCase() == "anything"){ %>
+    <p>Good Choice!</p>
+    <% } else { %>
+        <p>Bad Choice!</p>
+        <% } %>
+        
+
+<%# <%= %> take value and stick it into html
+<% %> for logic (conditionals,loop) %>
+
+
+<%- include ('partials/footer.ejs') %>

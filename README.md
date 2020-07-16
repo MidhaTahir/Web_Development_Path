@@ -1,5 +1,13 @@
-This **repo** includes my *beginner's level practice* of:
+This **repo** includes my _my practice_ with:
 
-- HTML 
+- HTML
 - CSS
 - JavaScript
+- Sass
+- Bootstrap
+- Node
+- Express
+- Mongodb
+- Mongoose
+- SQL
+- Tailwind
